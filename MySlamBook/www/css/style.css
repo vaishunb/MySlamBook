@@ -1,0 +1,6 @@
+.pane {
+    background-image: url(img/loginbg.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}

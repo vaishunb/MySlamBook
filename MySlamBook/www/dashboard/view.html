@@ -1,0 +1,75 @@
+<ion-view title="My Slam Book" hide-back-button="true" style="background: url('img/bg7.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+           <div ng-controller="DashboardCtrl">
+<div class="list card" ng-repeat="msg in messages">
+
+
+
+  <div class="item item-body">
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+ 		Name       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:    {{msg.Name}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Mobile Number : {{msg.Mobile}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Mail ID :  {{msg.Mail}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Hobby &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:  {{msg.Hobby}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Deepest Fear &nbsp;&nbsp;&nbsp;:  {{msg.Fear}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Favourite Food :  {{msg.Food}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Secret Crush  &nbsp;&nbsp;: {{msg.Crush}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Dear Friend &nbsp;&nbsp; :  {{msg.Friend}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Naughty things doing during invisible : {{msg.Invisible}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Important thing of Life : {{msg.Impthing}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Reason for like me : {{msg.Like}}
+    </font></b></p>
+    <p><b><font face="Comic Sans MS" color="#662244" size="3px">
+    Date : {{msg.date}}
+    </font></b></p>
+
+  </div>
+  <!--<div class="item ">
+    <h2>{{msg.from}}</h2>
+    <p> {{msg.date}}
+      <a href="#" class="subdued">1 Like</a>
+    </p>
+  </div>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Like
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-chatbox"></i>
+      SeenBy
+    </a>
+  </div>-->
+
+</div>
+
+
+
+  </ion-content>
+</ion-view>

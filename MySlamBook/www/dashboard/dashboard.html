@@ -1,0 +1,95 @@
+<ion-view title="My Slam Book" hide-back-button="true" style="background: url('img/bg7.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header padding">
+           <div ng-controller="DashboardCtrl">
+<!--<div class="list card" ng-repeat="msg in messages">
+
+
+
+  <div class="item item-body">
+    <p>
+ 		{{msg.body}}
+    </p>
+
+  </div>
+  <div class="item ">
+    <h2>{{msg.from}}</h2>
+    <p> {{msg.date}}
+      <a href="#" class="subdued">1 Like</a>
+    </p>
+  </div>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Like
+    </a>
+    <a class="tab-item" href="#">
+      <i class="icon ion-chatbox"></i>
+      SeenBy
+    </a>
+  </div>
+
+</div>-->
+
+<div class="list">
+   <label class="item item-input">
+        <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">Your Name/Petname?</span>
+        <input type="text"  name="name1" ng-model="name1">
+  </font></b></label>
+  <label class="item item-input">
+        <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">Your Mobile No?</span>
+        <input type="text"  name="mobile" ng-model="mobile">
+  </font></b></label>
+  <label class="item item-input">
+       <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">Your Mail-Id?</span>
+        <input type="text"  name="mail" ng-model="mail">
+  </font></b></label>
+  <label class="item item-input">
+         <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">What are your hobbies?</span>
+        <input type="text"  name="hobby" ng-model="hobby">
+  </font></b></label>
+  <label class="item item-input">
+        <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">What is your deepest fear?</span>
+        <input type="text"  name="fear" ng-model="fear">
+  </font></b></label>
+  <label class="item item-input">
+         <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">What's your favorite food?</span>
+        <input type="text"  name="food" ng-model="food">
+  </font></b></label>
+  <label class="item item-input">
+        <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">Who is your secret crush?</span>
+        <input type="text"  name="crush" ng-model="crush">
+  </font></b></label>
+  <label class="item item-input">
+        <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">Favorite friend?</span>
+        <input type="text"  name="friend" ng-model="friend">
+  </font></b></label>
+  <label class="item item-input">
+           <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">If you can invisible tell wat<br> first naughty things u do?</span>
+        <input type="text"  name="invisible" ng-model="invisible" ng-keydown="addMessage($event)">
+  </font></b></label>
+  <label class="item item-input">
+         <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">The most important thing in yr life?</span>
+        <input type="text"  name="impthing" ng-model="impthing" ng-keydown="addMessage($event)">
+  </font></b></label>
+  <label class="item item-input">
+         <span class="input-label"><b><font face="Comic Sans MS" color="#662244" size="3px">One thing you like about me?</span>
+        <input type="text"  name="like" ng-model="like" ng-keydown="addMessage($event)">
+  </font></b></label>
+
+  <!--<label class="item item-input">
+    <input type="text" ng-model="name" placeholder= {{name}}>
+  </label>
+  <label class="item item-input">
+    <textarea ng-model="msg" ng-keydown="addMessage($event)" placeholder="Message..."></textarea>
+  </label>-->
+      <button class="button button-full button-balanced" ng-click="sendMsg()"> <font face="Comic Sans MS"> Save into Slam Book  </button></font>
+</div>
+
+  </ion-content>
+</ion-view>
